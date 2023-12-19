@@ -90,6 +90,7 @@ export function NavigationBar() {
                             <Button
                                 variant="text"
                                 size="sm"
+                                
                                 className="hidden lg:inline-block"
                             >
                                 <span>Log In</span>
@@ -97,9 +98,10 @@ export function NavigationBar() {
                             <Button
                                 variant="gradient"
                                 size="sm"
-                                className="hidden lg:inline-block"
+                                className="hidden bg-red-400 lg:inline-block"
+                                color="light-green"
                             >
-                                <span>Sign in</span>
+                                <span className="">Sign in</span>
                             </Button>
                         </div>
                         <IconButton
@@ -152,6 +154,7 @@ export function NavigationBar() {
                             variant="gradient"
                             size="sm"
                             className=""
+                            color="light-green"
                         >
                             <span>Sign in</span>
                         </Button>

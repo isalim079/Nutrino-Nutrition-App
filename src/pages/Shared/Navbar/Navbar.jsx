@@ -5,7 +5,6 @@ import {
     Typography,
     Button,
     IconButton,
-    
 } from "@material-tailwind/react";
 
 export function NavigationBar() {
@@ -24,7 +23,7 @@ export function NavigationBar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal font-Poppins font-Poppins"
             >
                 <a href="#" className="flex items-center">
                     Dashboard
@@ -34,7 +33,7 @@ export function NavigationBar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal font-Poppins"
             >
                 <a href="#" className="flex items-center">
                     Activities
@@ -44,7 +43,7 @@ export function NavigationBar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal font-Poppins"
             >
                 <a href="#" className="flex items-center">
                     Nutrition
@@ -54,7 +53,7 @@ export function NavigationBar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal font-Poppins"
             >
                 <a href="#" className="flex items-center">
                     Workouts
@@ -64,9 +63,9 @@ export function NavigationBar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal font-Poppins"
             >
-                <a href="#" className="flex items-center">
+                <a href="#" className="flex items-center ">
                     Profile
                 </a>
             </Typography>
@@ -80,7 +79,7 @@ export function NavigationBar() {
                     <Typography
                         as="a"
                         href="#"
-                        className="mr-4 cursor-pointer py-1.5 font-medium"
+                        className="mr-4 cursor-pointer py-1.5 font-medium font-Poppins"
                     >
                         NUTRINO
                     </Typography>
@@ -90,15 +89,14 @@ export function NavigationBar() {
                             <Button
                                 variant="text"
                                 size="sm"
-                                
-                                className="hidden lg:inline-block"
+                                className="hidden lg:inline-block font-Poppins"
                             >
                                 <span>Log In</span>
                             </Button>
                             <Button
                                 variant="gradient"
                                 size="sm"
-                                className="hidden bg-red-400 lg:inline-block"
+                                className="hidden bg-red-400 lg:inline-block font-Poppins"
                                 color="light-green"
                             >
                                 <span className="">Sign in</span>
@@ -146,14 +144,14 @@ export function NavigationBar() {
                 <MobileNav open={openNav}>
                     {navList}
                     <div className="flex items-center gap-x-1">
-                        <Button fullWidth variant="text" size="sm" className="">
+                        <Button fullWidth variant="text" size="sm" className="font-Poppins">
                             <span>Log In</span>
                         </Button>
                         <Button
                             fullWidth
                             variant="gradient"
                             size="sm"
-                            className=""
+                            className="font-Poppins"
                             color="light-green"
                         >
                             <span>Sign in</span>
@@ -161,7 +159,6 @@ export function NavigationBar() {
                     </div>
                 </MobileNav>
             </Navbar>
-            
         </div>
     );
 }

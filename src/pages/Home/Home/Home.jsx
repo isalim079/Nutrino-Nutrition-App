@@ -1,13 +1,15 @@
 
 
 import { Banner } from "../Banner/Banner";
+import FeatureContent from "../FeatureContent/FeatureContent";
 
 
 const Home = () => {
     return (
         <div>
            
-            <Banner></Banner>
+            <Banner />
+            <FeatureContent />
         </div>
     );
 };

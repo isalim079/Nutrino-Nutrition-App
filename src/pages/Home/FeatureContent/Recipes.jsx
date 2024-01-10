@@ -30,6 +30,7 @@ const Recipes = () => {
             <h3 className="text-2xl mb-2 font-semibold text-green-600">
                 Recipe
             </h3>
+            {/* Swiper Js */}
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -44,8 +45,11 @@ const Recipes = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper "
             >
+                {/* Data mapping inside swiper */}
                 {recipes.map((recipe) => (
+                    /* Swiper Slide will be inside map section */
                     <SwiperSlide key={recipe?._id} className=" p-2 border">
+                        {/* This is for every single card section */}
                         <Card className="mt-6  h-[390px] rounded-b-lg bg-green-100 drop-shadow-lg">
                             <CardHeader color="blue-gray" className="relative">
                                 <img

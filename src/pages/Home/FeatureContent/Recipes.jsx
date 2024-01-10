@@ -72,7 +72,7 @@ const Recipes = () => {
                             </CardBody>
                             <CardFooter className="pt-0">
                                 <Button className="bg-green-900">
-                                    Read More
+                                    Recipe
                                 </Button>
                             </CardFooter>
                         </Card>

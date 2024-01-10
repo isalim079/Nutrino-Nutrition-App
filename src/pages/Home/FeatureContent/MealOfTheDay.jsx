@@ -59,7 +59,7 @@ const MealOfTheDay = () => {
                     </div>
                 </div>
                 <div className="">
-                    <h3 className="text-center text-2xl font-semibold underline text-green-900">
+                    <h3 className="text-center pt-10 text-2xl font-semibold underline text-green-900">
                         {images[currentSlide].title}
                     </h3>
                 </div>

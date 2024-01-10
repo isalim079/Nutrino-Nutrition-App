@@ -5,9 +5,9 @@ import Recipes from "./Recipes";
 
 const FeatureContent = () => {
     return (
-        <div >
-            <h1 className="text-center mt-10 md:text-5xl text-2xl font-semibold">Featured <span className="text-green-700">Content</span></h1>
-            <div className="my-10 max-w-screen-xl mx-auto">
+        <div className="bg-blue-gray-50 pb-10">
+            <h1 className="text-center pt-10 md:text-5xl text-2xl font-semibold">Featured <span className="text-green-700">Content</span></h1>
+            <div className="my-10 max-w-screen-xl mx-auto flex justify-between">
                 <MealOfTheDay />
                 <NutritionTips />
                 <Recipes />

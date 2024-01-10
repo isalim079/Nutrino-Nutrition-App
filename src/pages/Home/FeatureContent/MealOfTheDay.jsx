@@ -22,22 +22,26 @@ const images = [
 const MealOfTheDay = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
+    /* Setup for next slide */
     const goNextSlide = () => {
         setCurrentSlide((prevSlide) =>
             prevSlide === images.length - 1 ? 0 : prevSlide + 1
         );
     };
 
+    /* setup for previous slide */
     const goPrevSlide = () => {
         setCurrentSlide((prevSlide) =>
             prevSlide === 0 ? images.length - 1 : prevSlide - 1
         );
     };
-
     return (
-        <div>
-            <div className="w-96 relative">
-                <div className=" relative bg-green-100">
+        <div className="">
+            <h1 className="text-2xl mb-2 font-semibold text-green-600">
+                Meal of the day
+            </h1>
+            <div className="w-96 relative drop-shadow-lg">
+                <div className=" relative bg-green-100 rounded-lg">
                     <div className="flex justify-center p-5 drop-shadow-md">
                         <img
                             className="w-60"

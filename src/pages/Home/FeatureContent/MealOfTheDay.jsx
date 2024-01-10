@@ -4,7 +4,20 @@ import dinner from "../../../assets/images/mealOfTheDay/Dinner.png";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import { useState } from "react";
 
-const images = [breakFast, lunch, dinner];
+const images = [
+    {
+        image: breakFast,
+        title: "Breakfast",
+    },
+    {
+        image: lunch,
+        title: "Lunch",
+    },
+    {
+        image: dinner,
+        title: "Dinner",
+    },
+];
 
 const MealOfTheDay = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,11 +37,11 @@ const MealOfTheDay = () => {
     return (
         <div>
             <div className="w-96 relative">
-                <div className="border border-black relative bg-green-100">
+                <div className=" relative bg-green-100">
                     <div className="flex justify-center p-5 drop-shadow-md">
                         <img
                             className="w-60"
-                            src={images[currentSlide]}
+                            src={images[currentSlide].image}
                             alt=""
                         />
                     </div>
@@ -39,6 +52,11 @@ const MealOfTheDay = () => {
                         <button className="" onClick={goNextSlide}>
                             <FaCaretRight className="text-3xl text-green-200 bg-green-900 rounded-md pl-1" />
                         </button>
+                    </div>
+                    <div className="">
+                        <h3 className="text-center pb-3 text-2xl font-semibold underline text-green-900">
+                            {images[currentSlide].title}
+                        </h3>
                     </div>
                 </div>
             </div>

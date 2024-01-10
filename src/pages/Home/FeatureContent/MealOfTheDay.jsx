@@ -40,7 +40,7 @@ const MealOfTheDay = () => {
             <h1 className="text-2xl mb-2 font-semibold text-green-600">
                 Meal of the day
             </h1>
-            <div className="w-96 relative drop-shadow-lg">
+            <div className="relative drop-shadow-lg">
                 <div className=" relative bg-green-100 rounded-lg">
                     <div className="flex justify-center p-5 drop-shadow-md">
                         <img

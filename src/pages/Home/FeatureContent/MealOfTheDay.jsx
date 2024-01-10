@@ -40,8 +40,8 @@ const MealOfTheDay = () => {
             <h1 className="text-2xl mb-2 font-semibold text-green-600">
                 Meal of the day
             </h1>
-            <div className="relative drop-shadow-lg">
-                <div className=" relative bg-green-100 rounded-lg">
+            <div className="relative drop-shadow-lg bg-green-100 h-full rounded-lg">
+                <div className=" relative">
                     <div className="flex justify-center p-5 drop-shadow-md">
                         <img
                             className="w-60"
@@ -57,11 +57,11 @@ const MealOfTheDay = () => {
                             <FaCaretRight className="text-3xl text-green-200 bg-green-900 rounded-md pl-1" />
                         </button>
                     </div>
-                    <div className="">
-                        <h3 className="text-center pb-3 text-2xl font-semibold underline text-green-900">
-                            {images[currentSlide].title}
-                        </h3>
-                    </div>
+                </div>
+                <div className="">
+                    <h3 className="text-center text-2xl font-semibold underline text-green-900">
+                        {images[currentSlide].title}
+                    </h3>
                 </div>
             </div>
         </div>

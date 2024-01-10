@@ -30,7 +30,7 @@ const NutritionTips = () => {
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 3000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -38,14 +38,23 @@ const NutritionTips = () => {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper bg-green-100"
+                className="mySwiper bg-green-100 h-full rounded-lg drop-shadow-lg"
             >
                 {nutrinoTips.map((tips) => (
                     <SwiperSlide key={tips?._id} className="p-5">
-                        <h3 className="text-center text-xl font-bold pb-3">
-                            {tips?.title}
-                        </h3>
-                        <p className="text-justify">{tips?.description}</p>
+                        <div className="flex justify-center">
+                            <img
+                                className="w-32 p-3"
+                                src={tips?.image}
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <h3 className="text-center text-xl font-bold pb-3">
+                                {tips?.title}
+                            </h3>
+                            <p className="text-justify">{tips?.description}</p>
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

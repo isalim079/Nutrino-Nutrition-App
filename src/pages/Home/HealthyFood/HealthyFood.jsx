@@ -3,7 +3,7 @@ import wellnessImage from "../../../assets/images/mealOfTheDay/lunch.png";
 
 const HealthyFood = () => {
     return (
-        <div className="bg-blue-gray-50 pb-10">
+        <div className="bg-blue-gray-50">
             <div className="bg-blue-gray-50 pb-10 max-w-screen-2xl mx-auto relative">
                 {/* section title */}
                 <h1 className="text-center pt-20 mb-14 md:text-5xl text-2xl font-semibold">

@@ -12,6 +12,9 @@ module.exports = withMT({
         Poppins: "'Poppins', sans-serif",
         Lato: "'Lato', sans-serif",
         comicSans: "'Comic Neue', cursive",
+      },
+      backgroundImage: {
+        carbohydratesBackground: "url('./src/assets/images/sixNutritions/carbohydrates.jpg')"
       }
     },
   },

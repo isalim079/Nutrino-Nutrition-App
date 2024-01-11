@@ -2,13 +2,9 @@ import fatImage from "../../../../assets/images/sixNutritions/fat.png";
 
 const Fats = () => {
     return (
-        <div className="bg-green-100 p-10 rounded-lg px-28 mt-10">
-            <div className="flex justify-between items-center">
-                <div className="flex-1">
-                    <img className="w-80" src={fatImage} alt="" />
-                </div>
-
-                <div className="border-l-4 pl-10 border-green-800 flex-1">
+        <div className="bg-green-100 p-10 rounded-lg px-20 mt-10">
+            <div className="flex justify-between items-center gap-20">
+                <div className=" flex-1">
                     <div>
                         <h1 className="font-comicSans text-left font-semibold text-4xl">
                             Fats
@@ -29,6 +25,9 @@ const Fats = () => {
                             equilibrium within the body.
                         </p>
                     </div>
+                </div>
+                <div className=" flex-1">
+                    <img className="w-96 ml-28 border-l-4  border-green-800 pl-10" src={fatImage} alt="" />
                 </div>
             </div>
         </div>

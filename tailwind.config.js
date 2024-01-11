@@ -10,7 +10,8 @@ module.exports = withMT({
     extend: {
       fontFamily: {
         Poppins: "'Poppins', sans-serif",
-        Lato: "'Lato', sans-serif"
+        Lato: "'Lato', sans-serif",
+        comicSans: "'Comic Neue', cursive",
       }
     },
   },

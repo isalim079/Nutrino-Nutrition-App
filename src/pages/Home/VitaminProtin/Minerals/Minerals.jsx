@@ -1,13 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect } from "react";
 import mineralseImage from "../../../../assets/images/sixNutritions/Minerals.png";
 import classNames from "classnames";
+import Aos from "aos";
 
 const Minerals = () => {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+        });
+    }, []);
 
     const animation = classNames("animate__animated", "animate__bounce");
 
     return (
-        <div className="bg-green-100 p-10 rounded-lg px-20 mt-10">
+        <div className="bg-green-100 p-10 rounded-lg px-20 mt-10" data-aos="fade-right">
             <div className="flex justify-between items-center gap-20">
                 <div className=" flex-1">
                     <div>

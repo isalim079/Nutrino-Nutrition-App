@@ -1,9 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
+import Aos from "aos";
 import classNames from "classnames";
+import { useEffect } from "react";
 const Carbohydrates = () => {
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+        });
+    }, []);
     const animation = classNames("animate__animated", "animate__bounce");
     return (
-        <div className="bg-carbohydratesBackground bg-cover p-10 rounded-lg px-28 py-16 mt-10">
+        <div className="bg-carbohydratesBackground bg-cover p-10 rounded-lg px-28 py-16 mt-10" data-aos="zoom-in">
             <div className="flex justify-between items-center">
                 <div className="border-l-4 pl-10 border-green-500 bg-black/70 text-gray-300 p-10">
                     <div>

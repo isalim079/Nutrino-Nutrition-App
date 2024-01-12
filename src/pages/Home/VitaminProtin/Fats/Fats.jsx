@@ -1,11 +1,19 @@
+import { useEffect } from "react";
 import fatImage from "../../../../assets/images/sixNutritions/fat.png";
 
 import classNames from "classnames";
+import Aos from "aos";
 
 const Fats = () => {
     const animation = classNames("animate__animated", "animate__bounce");
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+        });
+    }, []);
     return (
-        <div className="bg-green-100 p-10 rounded-lg px-20 mt-10">
+        <div className="bg-green-100 p-10 rounded-lg px-20 mt-10" data-aos="fade-right">
             <div className="flex justify-between items-center gap-20">
                 <div className=" flex-1">
                     <div>

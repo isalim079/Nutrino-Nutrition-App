@@ -1,13 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 import classNames from "classnames";
 import proteinImage from "../../../../assets/images/sixNutritions/protein.png";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Protein = () => {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+        });
+    }, []);
 
     const proteinAnimation = classNames("animate__animated", "animate__bounce");
 
     return (
-        <div className="bg-green-100 p-10 rounded-lg px-28">
+        <div className="bg-green-100 p-10 rounded-lg px-28" data-aos="fade-left">
             <div className="flex justify-between items-center">
                 <div className="flex-1 ">
                     <img className="w-80" src={proteinImage} alt="" />

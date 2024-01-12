@@ -40,11 +40,11 @@ const MealOfTheDay = () => {
             <h1 className="text-2xl mb-2 font-semibold text-green-600">
                 Meal of the day
             </h1>
-            <div className="relative drop-shadow-lg bg-green-100 h-[420px] rounded-lg">
+            <div className="relative drop-shadow-lg bg-green-100 md:h-[420px] rounded-lg">
                 <div className=" relative">
                     <div className="flex justify-center p-5 drop-shadow-md">
                         <img
-                            className="w-60"
+                            className="md:w-60 w-40"
                             src={images[currentSlide].image}
                             alt=""
                         />
@@ -59,7 +59,7 @@ const MealOfTheDay = () => {
                     </div>
                 </div>
                 <div className="">
-                    <h3 className="text-center pt-10 text-2xl font-semibold underline text-green-900">
+                    <h3 className="text-center md:pt-10 -mt-10 md:mt-0 pb-5 md:pb-0 text-2xl font-semibold underline text-green-900">
                         {images[currentSlide].title}
                     </h3>
                 </div>

@@ -2,16 +2,14 @@ import { useEffect, useState } from "react";
 import { useAuth } from "../AuthContext/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import { FaUserCheck } from "react-icons/fa";
-import { FaCircleUser } from "react-icons/fa6";
-
-
+import floatingProfile from "../../../assets/lottieAnimation/floatingUser.json";
+import Lottie from "lottie-react";
 
 const FloatingProfile = () => {
-    const {user, logOut} = useAuth
+    const { user, logOut } = useAuth;
 
-
-    const [showButton, setShowButton] = useState(true)
-    const navigate = useNavigate()
+    const [showButton, setShowButton] = useState(true);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -45,10 +43,9 @@ const FloatingProfile = () => {
 
     return (
         <div className="">
-            {
-                showButton && (
-                    <div className="fixed bottom-10 right-10 z-50">
-                        <div className=" drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)] rounded-full bottom-10 right-10">
+            {showButton && (
+                <div className="fixed bottom-10 right-10 z-50">
+                    <div className=" drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] rounded-full bottom-10 right-10">
                         {user?.email ? (
                             <div>
                                 <button
@@ -69,13 +66,14 @@ const FloatingProfile = () => {
                                     onClick={() => setMenuToggle(!menuToggle)}
                                 >
                                     {menuToggle ? (
-                                        <div className="bg-gray-800 p-6 absolute bottom-10 right-5 rounded-md w-60">
+                                        <div className="bg-green-800 p-6 absolute bottom-10 right-5 rounded-md w-60">
                                             <div className="space-y-4 text-xs">
                                                 <p className="text-base">
                                                     Hey, {user?.displayName}
                                                 </p>
                                                 <p className="">
-                                                    Welcome to your health partner
+                                                    Welcome to your health
+                                                    partner
                                                 </p>
                                                 <button
                                                     onClick={handleSignOut}
@@ -94,21 +92,26 @@ const FloatingProfile = () => {
                             <div>
                                 <button
                                     onClick={() => setMenuToggle(!menuToggle)}
+                                    className=""
                                 >
-                                    <FaCircleUser className="text-6xl text-white bg-teal-900 rounded-full border-none" />
+                                    <Lottie
+                                        animationData={floatingProfile}
+                                        loop={true}
+                                        className="w-16 rounded-full p-3 bg-green-100"
+                                    />
                                 </button>
                                 <div
                                     className="absolute text-white"
                                     onClick={() => setMenuToggle(!menuToggle)}
                                 >
                                     {menuToggle ? (
-                                        <div className="bg-gray-800 p-6 absolute bottom-10 right-5 rounded-md w-52">
+                                        <div className="bg-green-900 p-6 absolute bottom-10 right-5 rounded-md w-52">
                                             <div className="space-y-4 text-xs">
                                                 <p className="text-base">
-                                                    Hey, User
+                                                    Hey User,
                                                 </p>
                                                 <Link to="/login">
-                                                    <button className="bg-slate-600 w-full py-2 text-sm mt-4">
+                                                    <button className="bg-green-600 w-full py-2 text-sm mt-4">
                                                         Login First!
                                                     </button>
                                                 </Link>
@@ -120,10 +123,9 @@ const FloatingProfile = () => {
                                 </div>
                             </div>
                         )}
-                        </div>
                     </div>
-                )
-            }
+                </div>
+            )}
         </div>
     );
 };

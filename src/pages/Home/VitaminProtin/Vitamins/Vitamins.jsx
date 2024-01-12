@@ -5,7 +5,6 @@ import classNames from "classnames";
 import Aos from "aos";
 
 const Vitamins = () => {
-
     useEffect(() => {
         Aos.init({
             duration: 1000,
@@ -15,7 +14,10 @@ const Vitamins = () => {
     const animation = classNames("animate__animated", "animate__bounce");
 
     return (
-        <div className="bg-green-100 p-10 rounded-lg px-28 mt-10" data-aos="fade-left">
+        <div
+            className="bg-green-100 p-10 rounded-lg px-28 mt-10"
+            data-aos="fade-left"
+        >
             <div className="flex justify-between items-center">
                 <div className="flex-1">
                     <img className="w-80" src={vitaminsImage} alt="" />
@@ -23,7 +25,9 @@ const Vitamins = () => {
 
                 <div className="border-l-4 pl-10 border-green-800 flex-1">
                     <div>
-                        <h1 className={`font-comicSans text-left font-semibold text-4xl ${animation}`}>
+                        <h1
+                            className={`font-comicSans text-left font-semibold text-4xl ${animation}`}
+                        >
                             Vitamins
                         </h1>
                         <p className="mt-3 font-comicSans text-justify text-lg">

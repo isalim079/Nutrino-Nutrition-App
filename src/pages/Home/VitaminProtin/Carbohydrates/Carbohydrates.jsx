@@ -10,11 +10,16 @@ const Carbohydrates = () => {
     }, []);
     const animation = classNames("animate__animated", "animate__bounce");
     return (
-        <div className="bg-carbohydratesBackground bg-cover p-10 rounded-lg px-28 py-16 mt-10" data-aos="zoom-in">
+        <div
+            className="bg-carbohydratesBackground bg-cover p-10 rounded-lg md:px-28 md:py-16 mt-10"
+            data-aos="zoom-in"
+        >
             <div className="flex justify-between items-center">
-                <div className="border-l-4 pl-10 border-green-500 bg-black/70 text-gray-300 p-10">
+                <div className="md:border-l-4 md:pl-10 border-green-500 bg-black/70 text-gray-300 p-5 md:p-10">
                     <div>
-                        <h1 className={`font-comicSans text-left font-semibold text-4xl ${animation}`}>
+                        <h1
+                            className={`font-comicSans text-left font-semibold text-2xl md:text-4xl ${animation}`}
+                        >
                             Carbohydrates
                         </h1>
                         <p className="mt-3 font-comicSans text-justify text-lg">

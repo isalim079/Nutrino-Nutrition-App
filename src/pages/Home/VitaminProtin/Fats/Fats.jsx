@@ -1,12 +1,15 @@
 import fatImage from "../../../../assets/images/sixNutritions/fat.png";
 
+import classNames from "classnames";
+
 const Fats = () => {
+    const animation = classNames("animate__animated", "animate__bounce");
     return (
         <div className="bg-green-100 p-10 rounded-lg px-20 mt-10">
             <div className="flex justify-between items-center gap-20">
                 <div className=" flex-1">
                     <div>
-                        <h1 className="font-comicSans text-left font-semibold text-4xl">
+                        <h1 className={`font-comicSans text-left font-semibold text-4xl ${animation}`}>
                             Fats
                         </h1>
                         <p className="mt-3 font-comicSans text-justify text-lg">

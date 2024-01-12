@@ -1,7 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import waterImage from "../../../../assets/images/sixNutritions/water.png";
+import classNames from "classnames";
 
 const Water = () => {
+
+    const animation = classNames("animate__animated", "animate__bounce");
+
     return (
         <div className="bg-green-100 p-10 rounded-lg px-28 mt-10">
             <div className="flex justify-between items-center">
@@ -11,7 +15,7 @@ const Water = () => {
 
                 <div className="border-l-4 pl-10 border-green-800 flex-1">
                     <div>
-                        <h1 className="font-comicSans text-left font-semibold text-4xl">
+                        <h1 className={`font-comicSans text-left font-semibold text-4xl ${animation}`}>
                             Waters
                         </h1>
                         <p className="mt-3 font-comicSans text-justify text-lg">

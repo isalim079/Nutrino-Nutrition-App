@@ -1,17 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
+import classNames from "classnames";
 import proteinImage from "../../../../assets/images/sixNutritions/protein.png";
 
 const Protein = () => {
+
+    const proteinAnimation = classNames("animate__animated", "animate__bounce");
+
     return (
         <div className="bg-green-100 p-10 rounded-lg px-28">
             <div className="flex justify-between items-center">
-                <div className="flex-1">
+                <div className="flex-1 ">
                     <img className="w-80" src={proteinImage} alt="" />
                 </div>
 
                 <div className="border-l-4 pl-10 border-green-800 flex-1">
                     <div>
-                        <h1 className="font-comicSans text-left font-semibold text-4xl">
+                        <h1 className={`font-comicSans text-left font-semibold text-4xl ${proteinAnimation}`}>
                             Protein
                         </h1>
                         <p className="mt-3 font-comicSans text-justify text-lg">

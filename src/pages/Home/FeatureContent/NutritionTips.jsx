@@ -38,7 +38,7 @@ const NutritionTips = () => {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper bg-green-100 h-[420px] rounded-lg drop-shadow-lg"
+                className="mySwiper bg-green-100 md:h-[420px] rounded-lg drop-shadow-lg"
             >
                 {nutrinoTips.map((tips) => (
                     <SwiperSlide key={tips?._id} className="p-5">
@@ -53,7 +53,9 @@ const NutritionTips = () => {
                             <h3 className="text-center text-xl font-bold pb-3">
                                 {tips?.title}
                             </h3>
-                            <p className="text-justify font-light text-lg">{tips?.description}</p>
+                            <p className="text-justify font-light text-lg">
+                                {tips?.description}
+                            </p>
                         </div>
                     </SwiperSlide>
                 ))}

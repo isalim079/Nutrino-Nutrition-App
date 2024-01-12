@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import Aos from "aos";
 
 const Protein = () => {
-
     useEffect(() => {
         Aos.init({
             duration: 1000,
@@ -15,18 +14,23 @@ const Protein = () => {
     const proteinAnimation = classNames("animate__animated", "animate__bounce");
 
     return (
-        <div className="bg-green-100 p-10 rounded-lg px-28" data-aos="fade-left">
-            <div className="flex justify-between items-center">
-                <div className="flex-1 ">
-                    <img className="w-80" src={proteinImage} alt="" />
+        <div
+            className="bg-green-100 md:p-10 rounded-lg md:px-28 p-4 py-10 md:py-0 "
+            data-aos="fade-left"
+        >
+            <div className="md:flex justify-between items-center">
+                <div className="md:flex-1 flex justify-center items-center  ">
+                    <img className="md:w-80 w-44" src={proteinImage} alt="" />
                 </div>
 
-                <div className="border-l-4 pl-10 border-green-800 flex-1">
+                <div className="md:border-l-4 md:pl-10 border-green-800 md:flex-1">
                     <div>
-                        <h1 className={`font-comicSans text-left font-semibold text-4xl ${proteinAnimation}`}>
+                        <h1
+                            className={`font-comicSans md:text-left font-semibold text-2xl mt-4 md:mt-0 md:text-4xl ${proteinAnimation}`}
+                        >
                             Protein
                         </h1>
-                        <p className="mt-3 font-comicSans text-justify text-lg">
+                        <p className="md:mt-3 mt-2 font-comicSans text-justify md:text-lg">
                             Protein, the building block of life, plays a pivotal
                             role in sustaining and repairing the body's tissues.
                             From muscle development to immune function, this

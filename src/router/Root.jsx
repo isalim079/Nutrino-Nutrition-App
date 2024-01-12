@@ -5,7 +5,7 @@ import FloatingProfile from "../pages/Shared/FloatingProfile/FloatingProfile";
 
 const Root = () => {
     return (
-        <div className="">
+        <div className="md:overflow-hidden">
             <FloatingProfile />
             <NavigationBar />
 

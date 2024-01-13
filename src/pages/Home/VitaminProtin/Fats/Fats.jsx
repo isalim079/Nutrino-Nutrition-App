@@ -13,11 +13,16 @@ const Fats = () => {
         });
     }, []);
     return (
-        <div className="bg-green-100 p-10 rounded-lg px-20 mt-10" data-aos="fade-right">
+        <div
+            className="bg-green-100 p-10 rounded-lg px-20 mt-10"
+            data-aos="fade-right"
+        >
             <div className="flex justify-between items-center gap-20">
                 <div className=" flex-1">
                     <div>
-                        <h1 className={`font-comicSans text-left font-semibold text-4xl ${animation}`}>
+                        <h1
+                            className={`font-comicSans text-left font-semibold text-4xl ${animation}`}
+                        >
                             Fats
                         </h1>
                         <p className="mt-3 font-comicSans text-justify text-lg">
@@ -38,7 +43,11 @@ const Fats = () => {
                     </div>
                 </div>
                 <div className=" flex-1">
-                    <img className="w-96 ml-28 border-l-4  border-green-800 pl-10" src={fatImage} alt="" />
+                    <img
+                        className="w-96 ml-28 border-l-4  border-green-800 pl-10"
+                        src={fatImage}
+                        alt=""
+                    />
                 </div>
             </div>
         </div>

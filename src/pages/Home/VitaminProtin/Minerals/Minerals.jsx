@@ -15,8 +15,8 @@ const Minerals = () => {
     const animation = classNames("animate__animated", "animate__bounce");
 
     return (
-        <div className="bg-green-100 p-10 rounded-lg px-20 mt-10" data-aos="fade-right">
-            <div className="flex justify-between items-center gap-20">
+        <div className="bg-green-100 p-4 md:p-10 rounded-lg md:px-20 mt-10" data-aos="fade-right">
+            <div className="flex flex-col-reverse md:flex-row justify-between items-center md:gap-20">
                 <div className=" flex-1">
                     <div>
                         <h1 className={`font-comicSans text-left font-semibold text-4xl ${animation}`}>
@@ -42,7 +42,7 @@ const Minerals = () => {
                 </div>
                 <div className=" flex-1">
                     <img
-                        className="w-96 ml-28 border-l-4  border-green-800 pl-10"
+                        className="w-96 md:ml-28 md:border-l-4  border-green-800 md:pl-10"
                         src={mineralseImage}
                         alt=""
                     />

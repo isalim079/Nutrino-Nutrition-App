@@ -14,10 +14,10 @@ const Fats = () => {
     }, []);
     return (
         <div
-            className="bg-green-100 p-10 rounded-lg px-20 mt-10"
+            className="bg-green-100 md:p-10 p-4 rounded-lg md:px-20 mt-10"
             data-aos="fade-right"
         >
-            <div className="flex justify-between items-center gap-20">
+            <div className="flex md:flex-row flex-col-reverse justify-between items-center md:gap-20">
                 <div className=" flex-1">
                     <div>
                         <h1
@@ -44,7 +44,7 @@ const Fats = () => {
                 </div>
                 <div className=" flex-1">
                     <img
-                        className="w-96 ml-28 border-l-4  border-green-800 pl-10"
+                        className="md:w-96 md:ml-28 mb-2 md:mb-0 md:border-l-4 border-green-800 md:pl-10"
                         src={fatImage}
                         alt=""
                     />

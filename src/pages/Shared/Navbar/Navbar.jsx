@@ -7,6 +7,8 @@ import {
     IconButton,
 } from "@material-tailwind/react";
 
+import {Link} from 'react-router-dom'
+
 export function NavigationBar() {
     const [openNav, setOpenNav] = React.useState(false);
 
@@ -78,7 +80,7 @@ export function NavigationBar() {
                 <div className="flex items-center justify-between text-blue-gray-900">
                     <Typography
                         as="a"
-                        href="#"
+                        href="/"
                         className="mr-4 cursor-pointer py-1.5 font-medium font-Poppins"
                     >
                         NUTRINO
@@ -86,13 +88,13 @@ export function NavigationBar() {
                     <div className="flex items-center gap-4">
                         <div className="mr-4 hidden lg:block">{navList}</div>
                         <div className="flex items-center gap-x-1">
-                            <Button
+                            <Link to='/login'><Button
                                 variant="text"
                                 size="sm"
                                 className="hidden lg:inline-block font-Poppins"
                             >
                                 <span>Log In</span>
-                            </Button>
+                            </Button></Link>
                             <Button
                                 variant="gradient"
                                 size="sm"
@@ -144,8 +146,8 @@ export function NavigationBar() {
                 <MobileNav open={openNav}>
                     {navList}
                     <div className="flex items-center gap-x-1">
-                        <Button fullWidth variant="text" size="sm" className="font-Poppins">
-                            <span>Log In</span>
+                    <Button fullWidth variant="text" size="sm" className="font-Poppins">
+                            <Link to='/login'>Log In</Link>
                         </Button>
                         <Button
                             fullWidth
@@ -154,7 +156,7 @@ export function NavigationBar() {
                             className="font-Poppins"
                             color="light-green"
                         >
-                            <span>Sign in</span>
+                            <span>Sign Up</span>
                         </Button>
                     </div>
                 </MobileNav>

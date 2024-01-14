@@ -97,7 +97,7 @@ const FloatingProfile = () => {
                                     <Lottie
                                         animationData={floatingProfile}
                                         loop={true}
-                                        className="w-16 rounded-full p-3 bg-green-100"
+                                        className="md:w-16 w-12 rounded-full p-3 bg-green-100"
                                     />
                                 </button>
                                 <div

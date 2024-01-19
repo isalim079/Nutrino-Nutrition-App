@@ -11,6 +11,7 @@ const Login = () => {
             </div>
             <div>
                 <input type="text" name="email" id="" className="border border-green-200 rounded-md pl-4 h-12 font-normal font-comicSans min-w-[320px]" placeholder="Email" />
+                <input type="password" name="password" id="" className="border border-green-200 rounded-md pl-4 h-12 font-normal font-comicSans min-w-[320px]" placeholder="" />
             </div>
            </div>
         </div>

@@ -9,11 +9,9 @@ const Login = () => {
     return (
         <div className="bg-green-100 h-screen">
             <div className="h-screen max-w-screen-2xl mx-auto flex items-center justify-center">
-
                 {/* Login page container */}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 w-full ">
-
                     {/* Animation File */}
 
                     <div className="  flex justify-center">
@@ -27,7 +25,6 @@ const Login = () => {
                     {/* Login section container */}
 
                     <div className="bg-green-100 drop-shadow-lg rounded-md  py-16">
-
                         {/* title and logo */}
 
                         <div className="flex justify-center flex-col items-center text-green-900">
@@ -39,7 +36,7 @@ const Login = () => {
                         </div>
 
                         {/* Input field container */}
-                        
+
                         <div className="flex justify-center items-center flex-col mt-8">
                             {/* Email */}
                             <input
@@ -71,7 +68,7 @@ const Login = () => {
                         </div>
 
                         {/* Go to signUp */}
-                        
+
                         <div className="mt-4 text-center">
                             <p className="font-comicSans">
                                 Don't have an account?{" "}

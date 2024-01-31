@@ -6,8 +6,12 @@ import animation from "../../assets/lottieAnimation/loginPage.json";
 import Lottie from "lottie-react";
 import { MdOutlineMailLock } from "react-icons/md";
 import { GoShieldLock } from "react-icons/go";
+import { HiMiniEye, HiMiniEyeSlash } from "react-icons/hi2";
+import { useState } from "react";
 
 const Login = () => {
+    const [showPass, setShowPass] = useState(false);
+
     return (
         <div className="bg-green-100 h-screen">
             <div className="bg-homePageBg">
@@ -58,7 +62,7 @@ const Login = () => {
                                 {/* Password */}
                                 <div className="relative">
                                     <input
-                                        type="password"
+                                        type={showPass ? "text" : "password"}
                                         name="password"
                                         id=""
                                         className="border border-green-200 rounded-md pl-10 h-12 font-normal font-comicSans min-w-[320px] block mt-4 focus:outline-none focus:border-2 focus:border-green-400"
@@ -66,6 +70,16 @@ const Login = () => {
                                     />
                                     <div className="absolute top-8 opacity-30 left-4">
                                         <GoShieldLock />
+                                    </div>
+                                    <div
+                                        className="absolute top-8 opacity-30 right-4"
+                                        onClick={() => setShowPass(!showPass)}
+                                    >
+                                        {showPass ? (
+                                            <button><HiMiniEye /></button>
+                                        ) : (
+                                            <button><HiMiniEyeSlash /></button>
+                                        )}
                                     </div>
                                 </div>
 

@@ -14,7 +14,8 @@ module.exports = withMT({
         comicSans: "'Comic Neue', cursive",
       },
       backgroundImage: {
-        carbohydratesBackground: "url('./src/assets/images/sixNutritions/carbohydrates.jpg')"
+        carbohydratesBackground: "url('./src/assets/images/sixNutritions/carbohydrates.jpg')",
+        homePageBg: "url('./src/assets/images/homePageBg/homePageBg.png')"
       }
     },
   },

@@ -3,8 +3,9 @@ import wellnessImage from "../../../assets/images/mealOfTheDay/lunch.png";
 
 const HealthyFood = () => {
     return (
-        <div className="bg-blue-gray-50 p-3">
-            <div className="bg-blue-gray-50 pb-10 max-w-screen-2xl mx-auto relative">
+        <div className="bg-light-green-50 p-3">
+            <div  className="bg-homePageBg">
+            <div className=" pb-10 max-w-screen-2xl mx-auto relative">
                 {/* section title */}
                 <h1 className="text-center pt-8 md:pt-20 mb-5 md:mb-14 md:text-5xl text-2xl font-semibold">
                     <span className="text-green-700">Healthy</span> Food
@@ -65,6 +66,7 @@ const HealthyFood = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

@@ -5,7 +5,7 @@ import VitaminProtein from "../VitaminProtin/VitaminProtein/VitaminProtein";
 
 const Home = () => {
     return (
-        <div>
+        <div >
             <Banner />
             <FeatureContent />
             <HealthyFood />

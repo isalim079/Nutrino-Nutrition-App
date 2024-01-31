@@ -7,7 +7,8 @@ import Water from "../Water/Water";
 
 const VitaminProtein = () => {
     return (
-        <div className="bg-blue-gray-50 pb-5 md:pb-10">
+        <div className="bg-light-green-50 pb-5 md:pb-10">
+            <div className="bg-homePageBg">
             <div className="max-w-screen-2xl mx-auto">
                 <h1 className="text-center md:pt-20 mb-5 md:mb-14 md:text-5xl text-2xl font-semibold">
                     Essential <span className="text-green-700">Nutrients</span>
@@ -21,6 +22,7 @@ const VitaminProtein = () => {
                     <Water />
                 </div>
             </div>
+        </div>
         </div>
     );
 };

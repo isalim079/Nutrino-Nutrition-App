@@ -16,7 +16,8 @@ export function Banner() {
     const backInUp = classNames("animate__animated", "animate__backInUp");
 
     return (
-        <div className="bg-light-green-300 md:p-0 p-3">
+        <div  className="bg-light-green-300 md:p-0 p-3">
+            <div className="bg-homePageBg">
             <div className="max-w-screen-2xl mx-auto ">
                 <div className="flex md:justify-between md:items-center md:h-[calc(100vh-72px)] flex-col-reverse md:flex-row">
                     <div className="flex-1">
@@ -52,6 +53,7 @@ export function Banner() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

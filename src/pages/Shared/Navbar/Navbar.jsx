@@ -7,7 +7,7 @@ import {
     IconButton,
 } from "@material-tailwind/react";
 
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export function NavigationBar() {
     const [openNav, setOpenNav] = React.useState(false);
@@ -88,13 +88,15 @@ export function NavigationBar() {
                     <div className="flex items-center gap-4">
                         <div className="mr-4 hidden lg:block">{navList}</div>
                         <div className="flex items-center gap-x-1">
-                            <Link to='/login'><Button
-                                variant="text"
-                                size="sm"
-                                className="hidden lg:inline-block font-Poppins"
-                            >
-                                <span>Log In</span>
-                            </Button></Link>
+                            <Link to="/login">
+                                <Button
+                                    variant="text"
+                                    size="sm"
+                                    className="hidden lg:inline-block font-Poppins"
+                                >
+                                    <span>Log In</span>
+                                </Button>
+                            </Link>
                             <Button
                                 variant="gradient"
                                 size="sm"
@@ -146,8 +148,13 @@ export function NavigationBar() {
                 <MobileNav open={openNav}>
                     {navList}
                     <div className="flex items-center gap-x-1">
-                    <Button fullWidth variant="text" size="sm" className="font-Poppins">
-                            <Link to='/login'>Log In</Link>
+                        <Button
+                            fullWidth
+                            variant="text"
+                            size="sm"
+                            className="font-Poppins"
+                        >
+                            <Link to="/login">Log In</Link>
                         </Button>
                         <Button
                             fullWidth

@@ -76,9 +76,13 @@ const Login = () => {
                                         onClick={() => setShowPass(!showPass)}
                                     >
                                         {showPass ? (
-                                            <button><HiMiniEye /></button>
+                                            <button>
+                                                <HiMiniEye />
+                                            </button>
                                         ) : (
-                                            <button><HiMiniEyeSlash /></button>
+                                            <button>
+                                                <HiMiniEyeSlash />
+                                            </button>
                                         )}
                                     </div>
                                 </div>

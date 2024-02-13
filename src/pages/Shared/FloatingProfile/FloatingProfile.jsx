@@ -10,7 +10,6 @@ const FloatingProfile = () => {
 
     const [showButton, setShowButton] = useState(true);
     const navigate = useNavigate();
-    
 
     useEffect(() => {
         const handleScroll = () => {

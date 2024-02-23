@@ -46,6 +46,7 @@ const FloatingProfile = () => {
             {showButton && (
                 <div className="fixed bottom-10 right-10 z-50">
                     
+                    
                     <div className="drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)] rounded-full bottom-10 right-10">
                         {user?.email ? (
                             <div>

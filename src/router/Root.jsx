@@ -9,6 +9,8 @@ const Root = () => {
     const noHeaderFooter =
         location?.pathname?.includes("/login") ||
         location?.pathname?.includes("/signUp");
+    
+    const noFooter = location?.pathname?.includes('/nutrition')
 
     return (
         <div className="md:overflow-hidden overflow-hidden">
@@ -19,7 +21,7 @@ const Root = () => {
 
             <Outlet />
             {
-                noHeaderFooter || <Footer />
+                noHeaderFooter || noFooter || <Footer />
             }
         </div>
     );

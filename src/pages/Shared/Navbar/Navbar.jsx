@@ -47,7 +47,7 @@ export function NavigationBar() {
                 color="blue-gray"
                 className="p-1 font-normal font-Poppins"
             >
-                <a href="#" className="flex items-center">
+                <a href="/nutrition" className="flex items-center">
                     Nutrition
                 </a>
             </Typography>

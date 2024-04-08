@@ -3,7 +3,7 @@
 const Nutrition = () => {
     return (
         <div>
-            Nutrition
+            Nutritio
         </div>
     );
 };

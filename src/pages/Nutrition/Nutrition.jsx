@@ -28,7 +28,6 @@ const Nutrition = () => {
     return (
         <div className="flex justify-center items-center my-10">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-
                 {/* ----------- Protein ---------------- */}
                 <div className="grid grid-cols-3">
                     <p className="font-semibold mr-4">Protein</p>
@@ -49,7 +48,6 @@ const Nutrition = () => {
                         <span className="text-sm">cal</span>
                     </p>
                 </div>
-                
 
                 {/* ----------- Carbohydrates ---------------- */}
                 <div className="grid grid-cols-3">
@@ -93,7 +91,6 @@ const Nutrition = () => {
                     </p>
                 </div>
 
-
                 {/* ----------- Waters ---------------- */}
                 <div className="grid grid-cols-3">
                     <p className="font-semibold mr-4">Waters</p>
@@ -114,7 +111,6 @@ const Nutrition = () => {
                         <span className="text-sm">Ltr</span>
                     </p>
                 </div>
-
             </form>
         </div>
     );

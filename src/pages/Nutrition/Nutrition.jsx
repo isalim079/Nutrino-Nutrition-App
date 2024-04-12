@@ -39,7 +39,7 @@ const Nutrition = () => {
                         placeholder="100gm"
                         {...register("protein")}
                     />
-                    
+
                     <p className="ml-4 font-semibold text-xl">
                         {" "}
                         ={" "}

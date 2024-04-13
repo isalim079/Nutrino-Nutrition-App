@@ -14,12 +14,10 @@ const Nutrition = () => {
     const proteinVal = watch("protein");
     const carbohydratesVal = watch("carbohydrates");
     const fatsVal = watch("fats");
-    const watersVal = watch("waters");
 
     const proteinCal = parseInt(proteinVal) * 4;
     const carbohydratesCal = parseInt(carbohydratesVal) * 4;
     const fatsCal = parseInt(fatsVal) * 9;
-    const watersLtr = parseFloat(watersVal) * 3.7;
     // console.log(proteinCal);
     // console.log(proteinVal);
 
@@ -89,27 +87,6 @@ const Nutrition = () => {
                             {!fatsCal ? 0 : fatsCal}
                         </span>{" "}
                         <span className="text-sm">cal</span>
-                    </p>
-                </div>
-
-                {/* ----------- Waters ---------------- */}
-                <div className="grid grid-cols-3">
-                    <p className="font-semibold mr-4">Waters</p>
-                    <input
-                        type="number"
-                        name="waters"
-                        id="waters"
-                        className="border border-green-200 rounded-md px-4 h-10 font-normal font-comicSans min-w-[200px] block focus:outline-none focus:border-2 focus:border-green-400"
-                        placeholder="100gm"
-                        {...register("waters")}
-                    />
-                    <p className="ml-4 font-semibold text-xl">
-                        {" "}
-                        ={" "}
-                        <span className="ml-1 font-bold font-Poppins">
-                            {!watersLtr ? 0 : watersLtr}
-                        </span>{" "}
-                        <span className="text-sm">Ltr</span>
                     </p>
                 </div>
             </form>

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import BMICalculator from "./BMICalculator/BMICalculator";
 
 const Nutrition = () => {
     const {
@@ -24,7 +25,8 @@ const Nutrition = () => {
     const onSubmit = async (data) => {};
 
     return (
-        <div className="flex justify-center items-center my-10">
+        <div className="flex flex-col justify-center items-center my-10">
+            <BMICalculator />
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 {/* ----------- Protein ---------------- */}
                 <div className="grid grid-cols-3">

@@ -6,10 +6,14 @@ const BMICalculator = () => {
     const [weightValue, setWeightValue] = useState(0);
 
     const heightInMeters = parseFloat(heightValue) / 100;
-    const BMIValue = (
+    let BMIValue = (
         parseFloat(weightValue) /
         (heightInMeters * heightInMeters)
     ).toFixed(2);
+
+    if(isNaN(BMIValue)){
+        BMIValue = 0;
+    }
 
     return (
         <div className="mb-16 w-full max-w-4xl">
@@ -39,7 +43,7 @@ const BMICalculator = () => {
                 <h3 className="text-xl flex  items-center gap-4">
                     Your BMI is:{" "}
                     <span className="font-bold text-4xl">
-                        {BMIValue === isNaN ? BMIValue : 0}
+                        {BMIValue}
                     </span>
                 </h3>
             </div>

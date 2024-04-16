@@ -11,7 +11,7 @@ const BMICalculator = () => {
         (heightInMeters * heightInMeters)
     ).toFixed(2);
 
-    if(isNaN(BMIValue)){
+    if (isNaN(BMIValue)) {
         BMIValue = 0;
     }
 
@@ -42,9 +42,13 @@ const BMICalculator = () => {
             <div className="flex justify-center items-center mt-5">
                 <h3 className="text-xl flex  items-center gap-4">
                     Your BMI is:{" "}
-                    <span className="font-bold text-4xl">
-                        {BMIValue}
-                    </span>
+                    <span className={`font-bold text-4xl ${
+                        BMIValue < 18.5 ? 'text-blue-700' :
+                        BMIValue <= 24.9 ? 'text-green-700' :
+                        BMIValue <= 29.9 ? 'text-yellow-700' :
+                        BMIValue < 40 ? 'text-orange-700' :
+                        BMIValue 
+                    }`}>{BMIValue}</span>
                 </h3>
             </div>
             <div className="flex justify-center items-center mt-5">

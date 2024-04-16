@@ -47,7 +47,8 @@ const BMICalculator = () => {
                         BMIValue <= 24.9 ? 'text-green-700' :
                         BMIValue <= 29.9 ? 'text-yellow-700' :
                         BMIValue < 40 ? 'text-orange-700' :
-                        BMIValue 
+                        BMIValue === 0 ? 'text-black' :
+                        'text-red-700'
                     }`}>{BMIValue}</span>
                 </h3>
             </div>

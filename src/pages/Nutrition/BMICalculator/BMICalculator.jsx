@@ -43,10 +43,10 @@ const BMICalculator = () => {
                 <h3 className="text-xl flex  items-center gap-4">
                     Your BMI is:{" "}
                     <span className={`font-bold text-4xl ${
-                        BMIValue < 18.5 ? 'text-blue-700' :
-                        BMIValue <= 24.9 ? 'text-green-700' :
-                        BMIValue <= 29.9 ? 'text-yellow-700' :
-                        BMIValue < 40 ? 'text-orange-700' :
+                        BMIValue > 0 && BMIValue < 18.5 ? 'text-blue-700' :
+                        BMIValue > 18.5 && BMIValue < 24.9 ? 'text-green-700' :
+                        BMIValue > 25 && BMIValue < 29.9 ? 'text-yellow-700' :
+                        BMIValue > 30 && BMIValue < 39.9 ? 'text-orange-700' :
                         BMIValue === 0 ? 'text-black' :
                         'text-red-700'
                     }`}>{BMIValue}</span>

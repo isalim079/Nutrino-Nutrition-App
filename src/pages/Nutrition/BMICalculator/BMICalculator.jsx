@@ -35,7 +35,7 @@ const BMICalculator = () => {
                     <p>30 - 39.9</p>
                     
                 </div>
-                <div className="bg-red-700 text-white t/*  */ext-center py-1">
+                <div className="bg-red-700 text-white text-center py-1">
                     <p>Severely Obese</p>
                     <p> ≥ 40 </p>
                 </div>

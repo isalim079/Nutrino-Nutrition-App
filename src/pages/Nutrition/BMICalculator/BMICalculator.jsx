@@ -33,8 +33,6 @@ const BMICalculator = () => {
                 <div className="bg-orange-700 text-white text-center py-1">
                     <p>Obese</p>
                     <p>30 - 39.9</p>
-                    
-                    
                 </div>
                 <div className="bg-red-700 text-white text-center py-1">
                     <p>Severely Obese</p>
@@ -44,14 +42,23 @@ const BMICalculator = () => {
             <div className="flex justify-center items-center mt-5">
                 <h3 className="text-xl flex  items-center gap-4">
                     Your BMI is:{" "}
-                    <span className={`font-bold text-4xl ${
-                        BMIValue > 0 && BMIValue < 18.5 ? 'text-blue-700' :
-                        BMIValue > 18.5 && BMIValue < 24.9 ? 'text-green-700' :
-                        BMIValue > 25 && BMIValue < 29.9 ? 'text-yellow-700' :
-                        BMIValue > 30 && BMIValue < 39.9 ? 'text-orange-700' :
-                        BMIValue === 0 ? 'text-black' :
-                        'text-red-700'
-                    }`}>{BMIValue}</span>
+                    <span
+                        className={`font-bold text-4xl ${
+                            BMIValue > 0 && BMIValue < 18.5
+                                ? "text-blue-700"
+                                : BMIValue > 18.5 && BMIValue < 24.9
+                                ? "text-green-700"
+                                : BMIValue > 25 && BMIValue < 29.9
+                                ? "text-yellow-700"
+                                : BMIValue > 30 && BMIValue < 39.9
+                                ? "text-orange-700"
+                                : BMIValue === 0
+                                ? "text-black"
+                                : "text-red-700"
+                        }`}
+                    >
+                        {BMIValue}
+                    </span>
                 </h3>
             </div>
             <div className="flex justify-center items-center mt-5">
